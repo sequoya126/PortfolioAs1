@@ -100,16 +100,23 @@
     </div>
   </div>
 
-  <nav class="navbar">
-    <a href="index.html" class="navbar-brand">S<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="work.html">How I Work</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="other-work.html">Other Work</a></li>
+  <nav class="navbar navbar-expand-md" style="background:var(--purple-deep); border-bottom:2px solid var(--amber); padding:0 2.5rem; position:sticky; top:0; z-index:100;">
+  <a href="index.html" class="navbar-brand" style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--cream); letter-spacing:0.08em;">S<span style="color:var(--amber);">.</span></a>
+  
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" style="border-color:rgba(232,213,196,0.3);">
+    <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto" style="gap:0.5rem;">
+      <li class="nav-item"><a class="nav-link" href="index.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="work.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">How I Work</a></li>
+      <li class="nav-item"><a class="nav-link" href="projects.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="other-work.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Other Work</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
   <section class="hero">
     <div class="hero-inner">
