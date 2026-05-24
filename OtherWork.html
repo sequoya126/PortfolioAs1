@@ -9,23 +9,21 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md" style="background:var(--purple-deep); border-bottom:2px solid var(--amber); padding:0 2.5rem; position:sticky; top:0; z-index:100;">
-  <a href="index.html" class="navbar-brand" style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--cream); letter-spacing:0.08em;">S<span style="color:var(--amber);">.</span></a>
-  
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" style="border-color:rgba(232,213,196,0.3);">
-    <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navMenu">
-    <ul class="navbar-nav ms-auto" style="gap:0.5rem;">
-      <li class="nav-item"><a class="nav-link" href="index.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="work.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">How I Work</a></li>
-      <li class="nav-item"><a class="nav-link" href="projects.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="other-work.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Other Work</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-md" style="background:var(--purple-deep); border-bottom:2px solid var(--amber); padding:0 2.5rem; position:sticky; top:0; z-index:100; height:64px;">
+    <a href="index.html" class="navbar-brand" style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--cream); letter-spacing:0.08em;">S<span style="color:var(--amber);">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" style="border-color:rgba(232,213,196,0.3);">
+      <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto" style="gap:0.5rem;">
+        <li class="nav-item"><a class="nav-link" href="index.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">How I Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html" style="color:var(--cream); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="other-work.html" style="color:var(--amber); font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">Other Work</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="page-hero">
     <div style="max-width:1100px; margin:0 auto; position:relative; z-index:1;">
@@ -34,55 +32,125 @@
     </div>
   </div>
 
-  <div style="max-width:1100px; margin:0 auto; padding:4rem 2.5rem;">
+  <div style="max-width:900px; margin:0 auto; padding:4rem 2.5rem;">
 
-    <p class="section-label">Personal projects</p>
-    <h2 class="section-title">Independent development</h2>
+    <p class="section-label">Projects & ventures</p>
+    <h2 class="section-title">What I build outside class</h2>
     <div class="section-divider"></div>
-
-    <p style="color:var(--text-muted); font-size:0.95rem; max-width:600px; margin-bottom:3rem;">
-      Projects built outside of coursework — experiments, research, and long-term builds I work on in my own time. These reflect my technical interests and where I'm headed.
+    <p style="color:var(--text-muted); font-size:0.95rem; max-width:580px; margin-bottom:4rem; line-height:1.8;">
+      A mix of personal projects, side ventures, and things I build for fun or for clients. Ordered by what I think is worth seeing first.
     </p>
 
-    <div class="two-col">
-
-      <!-- Drone Navigation Project -->
-      <a href="pages/drone-nav.html" class="project-card">
-        <div class="project-card-img-placeholder" style="background:var(--purple-deep); color:var(--cream); position:relative; overflow:hidden;">
-          <svg style="position:absolute;opacity:0.08;" width="100%" height="100%" viewBox="0 0 400 200">
-            <circle cx="200" cy="100" r="60" fill="none" stroke="#E8D5C4" stroke-width="1"/>
-            <circle cx="200" cy="100" r="100" fill="none" stroke="#E8D5C4" stroke-width="0.5"/>
-            <circle cx="200" cy="100" r="140" fill="none" stroke="#E8D5C4" stroke-width="0.5"/>
-            <line x1="200" y1="40" x2="200" y2="160" stroke="#C97B4B" stroke-width="1"/>
-            <line x1="140" y1="100" x2="260" y2="100" stroke="#C97B4B" stroke-width="1"/>
-            <circle cx="200" cy="100" r="6" fill="#C97B4B"/>
+    <!-- Project 1 — Solvetra -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:2px; min-height:280px;">
+      <div style="background:var(--purple-deep); display:flex; align-items:center; justify-content:center; padding:3rem; position:relative; overflow:hidden;">
+        <div style="position:absolute; inset:0; opacity:0.06;">
+          <svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+            <line x1="50" y1="280" x2="150" y2="60" stroke="#f5f0e8" stroke-width="1"/>
+            <line x1="250" y1="280" x2="150" y2="60" stroke="#f5f0e8" stroke-width="1"/>
+            <line x1="50" y1="280" x2="250" y2="280" stroke="#4a7c4e" stroke-width="2"/>
           </svg>
-          <span style="position:relative;z-index:1;">Drone Nav</span>
         </div>
-        <div class="project-card-body">
-          <p class="project-card-label">Machine Learning · Robotics</p>
-          <h3 class="project-card-title">Autonomous Drone Navigation</h3>
-          <p class="project-card-desc">An algorithm that navigates a drone through a 3D mapped environment, pathfinding through all rooms. Intended for real-world deployment.</p>
-          <div style="display:flex; align-items:center; gap:1rem; margin-top:0.75rem;">
-            <span class="coming-soon-badge">In progress</span>
-            <span style="font-size:0.7rem; color:var(--text-muted); letter-spacing:0.1em;">View details →</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Placeholder for future project -->
-      <div class="project-card" style="opacity:0.45; cursor:default;">
-        <div class="project-card-img-placeholder" style="background:var(--charcoal-soft); color:rgba(232,213,196,0.3);">
-          —
-        </div>
-        <div class="project-card-body">
-          <p class="project-card-label">Coming soon</p>
-          <h3 class="project-card-title">Next project</h3>
-          <p class="project-card-desc">More personal projects will be added here as they develop.</p>
-          <span class="coming-soon-badge">Upcoming</span>
+        <div style="position:relative; z-index:1; text-align:center;">
+          <svg width="80" height="80" viewBox="0 0 40 40" fill="none">
+            <line x1="4" y1="36" x2="20" y2="8" stroke="#d4a96a" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="36" y1="36" x2="20" y2="8" stroke="#d4a96a" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="11" y1="36" x2="20" y2="19" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="29" y1="36" x2="20" y2="19" stroke="#f5f0e8" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="4" y1="36" x2="36" y2="36" stroke="#2d5c32" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--cream); letter-spacing:0.15em; margin-top:0.75rem;">SOLVETRA</p>
         </div>
       </div>
+      <div style="background:#fff; border:0.5px solid var(--border); border-left:none; padding:2.5rem; display:flex; flex-direction:column; justify-content:center;">
+        <div style="display:flex; gap:0.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); border:1px solid var(--border); padding:0.2rem 0.6rem;">Construction</span>
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:#4a7c4e; border:1px solid rgba(74,124,78,0.3); padding:0.2rem 0.6rem;">Live</span>
+        </div>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--burgundy-deep); margin-bottom:0.75rem;">Solvetra</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.8; margin-bottom:1.5rem;">
+          My small renovation and carpentry company based in Ottawa. The site showcases completed work, explains services, and will eventually support full online quote booking. Built to reflect the brand — dark, warm, and grounded in the craft.
+        </p>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <a href="https://sequoya126.github.io/Solvetra-Website/" target="_blank" class="btn-primary" style="font-size:0.75rem; padding:0.6rem 1.25rem;">Visit site →</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Project 2 — Drone Nav -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:2px; min-height:280px;">
+      <div style="background:#fff; border:0.5px solid var(--border); border-right:none; padding:2.5rem; display:flex; flex-direction:column; justify-content:center; order:1;">
+        <div style="display:flex; gap:0.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); border:1px solid var(--border); padding:0.2rem 0.6rem;">Machine Learning</span>
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); border:1px solid var(--border); padding:0.2rem 0.6rem;">Robotics</span>
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-muted); border:1px solid rgba(122,106,90,0.3); padding:0.2rem 0.6rem;">In Progress</span>
+        </div>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--burgundy-deep); margin-bottom:0.75rem;">Autonomous Drone Navigation</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.8; margin-bottom:1.5rem;">
+          A machine learning agent that navigates a drone through a 3D mapped house, pathfinding through every room autonomously. The end goal is real-world deployment on a physical drone tested in my home.
+        </p>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <a href="pages/drone-nav.html" class="btn-primary" style="font-size:0.75rem; padding:0.6rem 1.25rem;">View details →</a>
+          <a href="https://github.com/sequoya126" target="_blank" style="font-size:0.75rem; padding:0.6rem 1.25rem; border:1px solid var(--border); color:var(--burgundy-deep); letter-spacing:0.1em; text-transform:uppercase; display:inline-block; transition:border-color 0.2s;">GitHub →</a>
+        </div>
+      </div>
+      <div style="background:var(--burgundy-deep); display:flex; align-items:center; justify-content:center; padding:3rem; order:2; position:relative; overflow:hidden;">
+        <svg style="position:absolute; opacity:0.12;" width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+          <circle cx="150" cy="150" r="60" fill="none" stroke="#E8D5C4" stroke-width="1"/>
+          <circle cx="150" cy="150" r="100" fill="none" stroke="#E8D5C4" stroke-width="0.5"/>
+          <circle cx="150" cy="150" r="140" fill="none" stroke="#E8D5C4" stroke-width="0.5"/>
+          <line x1="150" y1="10" x2="150" y2="290" stroke="#C97B4B" stroke-width="0.5"/>
+          <line x1="10" y1="150" x2="290" y2="150" stroke="#C97B4B" stroke-width="0.5"/>
+          <circle cx="150" cy="150" r="6" fill="#C97B4B"/>
+          <circle cx="90" cy="100" r="4" fill="#E8D5C4" opacity="0.6"/>
+          <circle cx="200" cy="190" r="4" fill="#E8D5C4" opacity="0.6"/>
+          <circle cx="120" cy="210" r="4" fill="#E8D5C4" opacity="0.6"/>
+          <line x1="150" y1="150" x2="90" y2="100" stroke="#C97B4B" stroke-width="0.5" stroke-dasharray="4,4"/>
+          <line x1="90" y1="100" x2="120" y2="210" stroke="#C97B4B" stroke-width="0.5" stroke-dasharray="4,4"/>
+          <line x1="120" y1="210" x2="200" y2="190" stroke="#C97B4B" stroke-width="0.5" stroke-dasharray="4,4"/>
+        </svg>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1rem; color:rgba(232,213,196,0.3); letter-spacing:0.2em; text-transform:uppercase; position:relative; z-index:1;">Drone Nav</p>
+      </div>
+    </div>
+
+    <!-- Project 3 — Zia's Chest -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:2px; min-height:280px;">
+      <div style="background:var(--purple-deep); display:flex; align-items:center; justify-content:center; padding:3rem; position:relative; overflow:hidden;">
+        <div style="position:absolute; inset:0; opacity:0.08;">
+          <svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice">
+            <rect x="60" y="100" width="180" height="120" rx="8" fill="none" stroke="#E8D5C4" stroke-width="1"/>
+            <path d="M60 130 Q150 90 240 130" fill="none" stroke="#C97B4B" stroke-width="1"/>
+            <circle cx="150" cy="100" r="15" fill="none" stroke="#E8D5C4" stroke-width="1"/>
+          </svg>
+        </div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:rgba(232,213,196,0.4); letter-spacing:0.2em; text-transform:uppercase; position:relative; z-index:1;">Zia's Chest</p>
+      </div>
+      <div style="background:#fff; border:0.5px solid var(--border); border-left:none; padding:2.5rem; display:flex; flex-direction:column; justify-content:center;">
+        <div style="display:flex; gap:0.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); border:1px solid var(--border); padding:0.2rem 0.6rem;">Web</span>
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--amber); border:1px solid var(--border); padding:0.2rem 0.6rem;">QR Integration</span>
+          <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:#4a7c4e; border:1px solid rgba(74,124,78,0.3); padding:0.2rem 0.6rem;">Live</span>
+        </div>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--burgundy-deep); margin-bottom:0.75rem;">Zia's Chest</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.8; margin-bottom:1.5rem;">
+          A simple showcase website for custom-made jewelry, designed to connect directly via QR codes. Customers scan a code and land on the product page instantly. Still early, but the concept is solid and the foundation is there.
+        </p>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <a href="https://sequoya126.github.io/Zia-sChest/" target="_blank" class="btn-primary" style="font-size:0.75rem; padding:0.6rem 1.25rem;">Visit site →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 — Placeholder -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; margin-bottom:2px; min-height:200px; opacity:0.4;">
+      <div style="background:#fff; border:0.5px solid var(--border); border-right:none; padding:2.5rem; display:flex; flex-direction:column; justify-content:center;">
+        <span style="font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-muted); border:1px solid rgba(122,106,90,0.3); padding:0.2rem 0.6rem; display:inline-block; margin-bottom:1rem; width:fit-content;">Upcoming</span>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--burgundy-deep); margin-bottom:0.75rem;">Next project</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.8;">More projects will appear here as they develop.</p>
+      </div>
+      <div style="background:var(--cream-light); border:0.5px solid var(--border); border-left:none; display:flex; align-items:center; justify-content:center;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:3rem; color:var(--border);">—</p>
+      </div>
     </div>
 
   </div>
